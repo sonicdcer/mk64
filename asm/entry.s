@@ -10,7 +10,7 @@
 
 .section .text, "ax"
 
-glabel entry_point
+glabel entrypoint
 /* 001000 80000400 3C08800F */  lui   $t0, %hi(_mainSegmentEnd) # $t0, 0x800f
 /* 001004 80000404 3C09000A */  lui   $t1, (0x000A0FC0 >> 16) # lui $t1, 0xa
 /* 001008 80000408 25086910 */  addiu $t0, %lo(_mainSegmentEnd) # addiu $t0, $t0, 0x6910

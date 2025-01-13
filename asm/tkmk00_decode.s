@@ -341,6 +341,7 @@ glabel tkmk00decode
 /* 041654 80040A54 8FB0019C */  lw    $s0, 0x19c($sp)
 /* 041658 80040A58 03E00008 */  jr    $ra
 /* 04165C 80040A5C 23BD0400 */   addi  $sp, $sp, 0x400
+.size tkmk00decode, . - tkmk00decode
 
 glabel func_80040A60
 /* 041660 80040A60 00E3C820 */  add   $t9, $a3, $v1

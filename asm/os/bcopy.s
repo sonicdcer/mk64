@@ -229,4 +229,4 @@ backwards_4:
     nop
     nop
     nop
-
+.size bcopy, . - bcopy

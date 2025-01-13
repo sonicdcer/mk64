@@ -7,6 +7,7 @@
 .macro glabel label
     .global \label
     .balign 4
+    .type \label, @function
     \label:
 .endm
 

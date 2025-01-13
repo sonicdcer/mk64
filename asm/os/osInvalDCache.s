@@ -60,3 +60,4 @@ glabel osInvalDCache
 /* 0CE828 800CDC28 00000000 */   nop   
 
 /* 0CE82C 800CDC2C 00000000 */  nop   
+.size osInvalDCache, . - osInvalDCache

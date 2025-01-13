@@ -58,3 +58,4 @@ zerodone:
 /* 0CE6F8 800CDAF8 00000000 */   nop   
 
 /* 0CE6FC 800CDAFC 00000000 */  nop   
+.size bzero, . - bzero

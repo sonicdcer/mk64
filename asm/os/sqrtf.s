@@ -14,3 +14,4 @@ glabel sqrtf
 
 /* 0CED48 800CE148 00000000 */  nop   
 /* 0CED4C 800CE14C 00000000 */  nop   
+.size sqrtf, . - sqrtf

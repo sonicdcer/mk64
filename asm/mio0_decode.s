@@ -381,3 +381,4 @@ glabel mio0encode
 /* 0411C8 800405C8 03261022 */   sub   $v0, $t9, $a2
 
 /* 0411CC 800405CC 00000000 */  nop   
+.size mio0decode, . - mio0decode
