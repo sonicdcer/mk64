@@ -374,6 +374,7 @@ glabel func_80040A60
 /* 0416BC 80040ABC 20840004 */  addi  $a0, $a0, 4
 /* 0416C0 80040AC0 03E00008 */  jr    $ra
 /* 0416C4 80040AC4 00E84004 */   sllv  $t0, $t0, $a3
+.size func_80040A60, . - func_80040A60
 
 glabel func_80040AC8
 /* 0416C8 80040AC8 006AC006 */  srlv  $t8, $t2, $v1
@@ -445,6 +446,7 @@ glabel func_80040AC8
 .L80040BB8:
 /* 0417B8 80040BB8 03E00008 */  jr    $ra
 /* 0417BC 80040BBC 00000000 */   nop   
+.size func_80040AC8, . - func_80040AC8
 
 glabel func_80040BC0
 /* 0417C0 80040BC0 AE7FFFF8 */  sw    $ra, -8($s3)
@@ -487,6 +489,7 @@ glabel func_80040BC0
 /* 041848 80040C48 02001025 */  move  $v0, $s0
 /* 04184C 80040C4C 03E00008 */  jr    $ra
 /* 041850 80040C50 00000000 */   nop   
+.size func_80040BC0, . - func_80040BC0
 
 glabel func_80040C54
 /* 041854 80040C54 0120A025 */  move  $s4, $t1
@@ -508,6 +511,8 @@ glabel func_80040C54
 .L80040C8C:
 /* 04188C 80040C8C 02600008 */  jr    $s3
 /* 041890 80040C90 00000000 */   nop   
+.size func_80040C54, . - func_80040C54
+
 glabel func_80040C94
 /* 041894 80040C94 2B010010 */  slti  $at, $t8, 0x10
 /* 041898 80040C98 54200013 */  bnel  $at, $zero, .L80040CE8
@@ -543,3 +548,4 @@ glabel func_80040C94
 /* 0418F8 80040CF8 00000000 */   nop   
 
 /* 0418FC 80040CFC 00000000 */  nop   
+.size func_80040C94, . - func_80040C94

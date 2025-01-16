@@ -4,6 +4,13 @@
 .set K1BASE, 0xA0000000
 .set K2BASE, 0xC0000000
 
+.macro test label
+    .global \label
+    .balign 4
+    .type \label, @function
+    \label:
+.endm
+
 .macro glabel label
     .global \label
     .balign 4
