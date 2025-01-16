@@ -94,3 +94,4 @@ glabel func_802B8614
 /* 121D8C 802B877C D7BE0030 */  ldc1  $f30, 0x30($sp)
 /* 121D90 802B8780 03E00008 */  jr    $ra
 /* 121D94 802B8784 27BD00A0 */   addiu $sp, $sp, 0xa0
+.size func_802B8614, . - func_802B8614

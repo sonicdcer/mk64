@@ -389,3 +389,4 @@ glabel func_80096CD8
 /* 097E68 80097268 8FBE0050 */  lw    $fp, 0x50($sp)
 /* 097E6C 8009726C 03E00008 */  jr    $ra
 /* 097E70 80097270 27BD00E8 */   addiu $sp, $sp, 0xe8
+.size func_80096CD8, . - func_80096CD8

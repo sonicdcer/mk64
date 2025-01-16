@@ -431,3 +431,4 @@ glabel func_800AB314
 /* 0AC4F8 800AB8F8 27BD0040 */  addiu $sp, $sp, 0x40
 /* 0AC4FC 800AB8FC 03E00008 */  jr    $ra
 /* 0AC500 800AB900 00000000 */   nop   
+.size func_800AB314, . - func_800AB314

@@ -238,3 +238,4 @@ glabel func_80099AEC
 /* 09AA48 80099E48 8FBE0048 */  lw    $fp, 0x48($sp)
 /* 09AA4C 80099E4C 03E00008 */  jr    $ra
 /* 09AA50 80099E50 27BD0098 */   addiu $sp, $sp, 0x98
+.size func_80099AEC, . - func_80099AEC

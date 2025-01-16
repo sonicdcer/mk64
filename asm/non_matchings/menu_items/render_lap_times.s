@@ -3,15 +3,18 @@
 glabel D_800F0C54
 .asciiz "'"
 .balign 4
+.size D_800F0C54, . - D_800F0C54
 
 glabel D_800F0C58
 .asciiz "\""
 .balign 4
+.size D_800F0C58, . - D_800F0C58
 
 .section .late_rodata
 
 glabel D_800F1DC8
 .float 0.65
+.size D_800F1DC8, . - D_800F1DC8
 
 .section .text
 
@@ -213,3 +216,4 @@ glabel render_lap_times
 /* 0A5618 800A4A18 27BD0050 */  addiu $sp, $sp, 0x50
 /* 0A561C 800A4A1C 03E00008 */  jr    $ra
 /* 0A5620 800A4A20 00000000 */   nop   
+.size render_lap_times, . - render_lap_times

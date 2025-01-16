@@ -98,3 +98,4 @@ glabel crash_screen_draw_square
 /* 004E8C 8000428C 8FB40028 */  lw    $s4, 0x28($sp)
 /* 004E90 80004290 03E00008 */  jr    $ra
 /* 004E94 80004294 27BD0030 */   addiu $sp, $sp, 0x30
+.size crash_screen_draw_square, . - crash_screen_draw_square

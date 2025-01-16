@@ -377,3 +377,4 @@ glabel func_80065F0C
 /* 0670D4 800664D4 8FB30030 */  lw    $s3, 0x30($sp)
 /* 0670D8 800664D8 03E00008 */  jr    $ra
 /* 0670DC 800664DC 27BD00E8 */   addiu $sp, $sp, 0xe8
+.size func_80065F0C, . - func_80065F0C

@@ -421,3 +421,4 @@ glabel player_select_menu_act
 /* 0B474C 800B3B4C 27BD0040 */  addiu $sp, $sp, 0x40
 /* 0B4750 800B3B50 03E00008 */  jr    $ra
 /* 0B4754 800B3B54 00000000 */   nop
+.size player_select_menu_act, . - player_select_menu_act
