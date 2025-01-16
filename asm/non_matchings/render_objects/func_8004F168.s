@@ -165,3 +165,4 @@ glabel func_8004F168
 /* 04FFD8 8004F3D8 27BD0030 */  addiu $sp, $sp, 0x30
 /* 04FFDC 8004F3DC 03E00008 */  jr    $ra
 /* 04FFE0 8004F3E0 00000000 */   nop
+.size func_8004F168, . - func_8004F168

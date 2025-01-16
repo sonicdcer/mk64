@@ -2,6 +2,7 @@
 
 glabel D_800F35C0
 .float 3.333333333
+.size D_800F35C0, . - D_800F35C0
 
 .section .text
 
@@ -168,3 +169,4 @@ glabel func_800C16E8
 /* 0C2528 800C1928 D5B40010 */  ldc1  $f20, 0x10($t5)
 /* 0C252C 800C192C 03E00008 */  jr    $ra
 /* 0C2530 800C1930 25BD0018 */   addiu $sp, $t5, 0x18
+.size func_800C16E8, . - func_800C16E8

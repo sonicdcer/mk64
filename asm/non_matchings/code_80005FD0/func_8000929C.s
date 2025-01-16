@@ -2,9 +2,11 @@
 
 glabel D_800ECFA8
 .float 1300.0
+.size D_800ECFA8, . - D_800ECFA8
 
 glabel D_800ECFAC
 .float -1300.0
+.size D_800ECFAC, . - D_800ECFAC
 
 .section .text
 
@@ -370,3 +372,4 @@ glabel func_8000929C
 /* 00A3D4 800097D4 27BD0050 */  addiu $sp, $sp, 0x50
 /* 00A3D8 800097D8 03E00008 */  jr    $ra
 /* 00A3DC 800097DC 00000000 */   nop   
+.size func_8000929C, . - func_8000929C

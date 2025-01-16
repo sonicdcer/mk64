@@ -2,24 +2,31 @@
 
 glabel D_800ECFB0
 .float 4.3
+.size D_800ECFB0, . - D_800ECFB0
 
 glabel D_800ECFB4
 .float 8.33333333
+.size D_800ECFB4, . - D_800ECFB4
 
 glabel D_800ECFB8
 .float 0.9
+.size D_800ECFB8, . - D_800ECFB8
 
 glabel D_800ECFBC
 .float -0.9
+.size D_800ECFBC, . - D_800ECFBC
 
 glabel D_800ECFC0
 .float 0.9
+.size D_800ECFC0, . - D_800ECFC0
 
 glabel D_800ECFC4
 .float -0.9
+.size D_800ECFC4, . - D_800ECFC4
 
 glabel D_800ECFC8
 .float 3.33333333
+.size D_800ECFC8, . - D_800ECFC8
 
 .section .text
 
@@ -1533,3 +1540,4 @@ glabel func_80009B60
 /* 00BD34 8000B134 27BD00D0 */  addiu $sp, $sp, 0xd0
 /* 00BD38 8000B138 03E00008 */  jr    $ra
 /* 00BD3C 8000B13C 00000000 */   nop
+.size func_80009B60, . - func_80009B60

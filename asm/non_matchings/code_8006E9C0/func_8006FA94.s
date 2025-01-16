@@ -445,3 +445,4 @@ glabel func_8006FA94
 /* 070D3C 8007013C 27BD0018 */  addiu $sp, $sp, 0x18
 /* 070D40 80070140 03E00008 */  jr    $ra
 /* 070D44 80070144 00000000 */   nop
+.size func_8006FA94, . - func_8006FA94

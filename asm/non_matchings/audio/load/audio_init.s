@@ -2,12 +2,15 @@
 
 glabel D_800F2EA0
 .float 20.0304203
+.size D_800F2EA0, . - D_800F2EA0
 
 glabel D_800F2EA4
 .float 16.546
+.size D_800F2EA4, . - D_800F2EA4
 
 glabel D_800F2EA8
 .float 16.713
+.size D_800F2EA8, . - D_800F2EA8
 
 .section .text
 
@@ -343,3 +346,4 @@ glabel audio_init
 /* 0BD1C4 800BC5C4 8FB00014 */  lw    $s0, 0x14($sp)
 /* 0BD1C8 800BC5C8 03E00008 */  jr    $ra
 /* 0BD1CC 800BC5CC 27BD0090 */   addiu $sp, $sp, 0x90
+.size audio_init, . - audio_init

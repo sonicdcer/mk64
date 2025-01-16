@@ -3,10 +3,12 @@
 glabel D_800F0C14
 .asciiz "'"
 .balign 4
+.size D_800F0C14, . - D_800F0C14
 
 glabel D_800F0C18
 .asciiz "\""
 .balign 4
+.size D_800F0C18, . - D_800F0C18
 
 .section .late_rodata
 
@@ -29,7 +31,7 @@ dlabel jpt_800F15E4
 .word .L800A08BC, .L800A08BC, .L800A08BC
 .size jpt_800F15E4, . - jpt_800F15E4
 
-glabel jpt_800F16E0
+dlabel jpt_800F16E0
 .word .L800A07FC, .L800A080C, .L800A081C, .L800A082C
 .word .L800A083C, .L800A084C
 .size jpt_800F16E0, . - jpt_800F16E0
@@ -85,7 +87,7 @@ dlabel jpt_800F16F8
 .word .L800A07EC
 .size jpt_800F16F8, . - jpt_800F16F8
 
-glabel jpt_800F19EC
+dlabel jpt_800F19EC
 .word .L8009F844, .L8009F874, .L8009F8B8, .L8009FB24
 .word .L8009F904, .L800A08C4, .L800A08C4, .L800A08C4
 .word .L800A08C4, .L8009FD14, .L8009FD34, .L8009FD34
@@ -110,7 +112,7 @@ glabel D_800F1ACC
 .float 0.9
 .size D_800F1ACC, . - D_800F1ACC
 
-glabel jpt_800F1AD0
+dlabel jpt_800F1AD0
 .word .L8009FF0C, .L8009FF0C, .L8009FF0C, .L8009FF0C
 .word .L8009FF50, .L8009FF50, .L8009FF90, .L8009FF90
 .size jpt_800F1AD0, . - jpt_800F1AD0

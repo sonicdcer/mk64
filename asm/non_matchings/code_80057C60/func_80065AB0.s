@@ -2,6 +2,7 @@
 
 glabel D_800E48C8
 .word 0x00ffffff, 0x00ffff00, 0x00ff9600
+.size D_800E48C8, . - D_800E48C8
 
 .section .text
 
@@ -289,3 +290,4 @@ glabel func_80065AB0
 /* 066B00 80065F00 27BD00C0 */  addiu $sp, $sp, 0xc0
 /* 066B04 80065F04 03E00008 */  jr    $ra
 /* 066B08 80065F08 00000000 */   nop   
+.size func_80065AB0, . - func_80065AB0

@@ -342,3 +342,4 @@ glabel func_800088D8
 .L80008DB8:
 /* 0099B8 80008DB8 03E00008 */  jr    $ra
 /* 0099BC 80008DBC 27BD0058 */   addiu $sp, $sp, 0x58
+.size func_800088D8, . - func_800088D8

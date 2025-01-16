@@ -65,3 +65,4 @@ glabel func_800B578C
 /* 0B647C 800B587C 304F00FF */  andi  $t7, $v0, 0xff
 /* 0B6480 800B5880 03E00008 */  jr    $ra
 /* 0B6484 800B5884 01E01025 */   move  $v0, $t7
+.size func_800B578C, . - func_800B578C

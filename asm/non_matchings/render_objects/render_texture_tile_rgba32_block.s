@@ -124,3 +124,4 @@ glabel render_texture_tile_rgba32_block
 /* 04D4C8 8004C8C8 8FB00020 */  lw    $s0, 0x20($sp)
 /* 04D4CC 8004C8CC 03E00008 */  jr    $ra
 /* 04D4D0 8004C8D0 27BD0048 */   addiu $sp, $sp, 0x48
+.size render_texture_tile_rgba32_block, . - render_texture_tile_rgba32_block

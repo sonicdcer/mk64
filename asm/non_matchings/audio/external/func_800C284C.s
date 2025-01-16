@@ -93,3 +93,4 @@ glabel func_800C284C
 /* 0C35A8 800C29A8 8FDE0028 */  lw    $fp, 0x28($fp)
 /* 0C35AC 800C29AC 03E00008 */  jr    $ra
 /* 0C35B0 800C29B0 27BD0040 */   addiu $sp, $sp, 0x40
+.size func_800C284C, . - func_800C284C

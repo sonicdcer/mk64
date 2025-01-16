@@ -170,3 +170,4 @@ glabel func_800C4FE4
 /* 0C5E6C 800C526C 8FDE0048 */  lw    $fp, 0x48($fp)
 /* 0C5E70 800C5270 03E00008 */  jr    $ra
 /* 0C5E74 800C5274 27BD0068 */   addiu $sp, $sp, 0x68
+.size func_800C4FE4, . - func_800C4FE4

@@ -1,9 +1,11 @@
 .section .late_rodata
 glabel D_800F2B38
 .double 0.001
+.size D_800F2B38, . - D_800F2B38
 
 glabel D_800F2B40
 .float 0.001
+.size D_800F2B40, . - D_800F2B40
 
 .section .text
 glabel func_800AFC54
@@ -115,3 +117,5 @@ glabel func_800AFC54
 /* 0B09F4 800AFDF4 27BD0058 */  addiu $sp, $sp, 0x58
 /* 0B09F8 800AFDF8 03E00008 */  jr    $ra
 /* 0B09FC 800AFDFC 00000000 */   nop   
+.size func_800AFC54, . - func_800AFC54
+

@@ -2,6 +2,7 @@
 
 glabel D_800F0CD0
 .double 0.6931471805599453
+.size D_800F0CD0, . - D_800F0CD0
 
 .section .text
 

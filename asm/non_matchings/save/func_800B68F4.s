@@ -50,3 +50,4 @@ glabel func_800B68F4
 /* 0B75B0 800B69B0 24A50003 */   addiu $a1, $a1, 3
 /* 0B75B4 800B69B4 03E00008 */  jr    $ra
 /* 0B75B8 800B69B8 30A200FF */   andi  $v0, $a1, 0xff
+.size func_800B68F4, . - func_800B68F4

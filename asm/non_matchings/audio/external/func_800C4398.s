@@ -2,6 +2,7 @@
 
 glabel D_800F3664
 .float 100000.0
+.size D_800F3664, . - D_800F3664
 
 .section .text
 
@@ -253,3 +254,4 @@ glabel func_800C4398
 /* 0C5330 800C4730 8FDE0028 */  lw    $fp, 0x28($fp)
 /* 0C5334 800C4734 03E00008 */  jr    $ra
 /* 0C5338 800C4738 27BD0050 */   addiu $sp, $sp, 0x50
+.size func_800C4398, . - func_800C4398

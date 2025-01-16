@@ -1,6 +1,6 @@
 .section .late_rodata
 
-glabel jpt_800F376C
+dlabel jpt_800F376C
 .word L800C3DEC, L800C3E10, L800C3E30, L800C3E70
 .word L800C3E98, L800C3EBC, L800C3F04
 

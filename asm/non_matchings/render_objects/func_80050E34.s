@@ -431,3 +431,4 @@ glabel func_80050E34
 /* 0520B0 800514B0 8FB10028 */  lw    $s1, 0x28($sp)
 /* 0520B4 800514B4 03E00008 */  jr    $ra
 /* 0520B8 800514B8 27BD00D8 */   addiu $sp, $sp, 0xd8
+.size func_80050E34, . - func_80050E34

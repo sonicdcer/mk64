@@ -67,3 +67,4 @@ glabel func_80019FB4
 /* 01AC98 8001A098 AC204628 */  sw    $zero, %lo(D_80164628)($at) # 0x4628($at)
 /* 01AC9C 8001A09C 03E00008 */  jr    $ra
 /* 01ACA0 8001A0A0 00000000 */   nop
+.size func_80019FB4, . - func_80019FB4

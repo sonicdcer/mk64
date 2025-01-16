@@ -2,12 +2,15 @@
 
 glabel D_800ED270
 .double -10000.0
+.size D_800ED270, . - D_800ED270
 
 glabel D_800ED278
 .double 10000.0
+.size D_800ED278, . - D_800ED278
 
 glabel D_800ED280
 .double 10000.0
+.size D_800ED280, . - D_800ED280
 
 .section .text
 
@@ -464,3 +467,4 @@ glabel func_80017054
 /* 018314 80017714 27BD00B8 */  addiu $sp, $sp, 0xb8
 /* 018318 80017718 03E00008 */  jr    $ra
 /* 01831C 8001771C 00000000 */   nop   
+.size func_80017054, . - func_80017054

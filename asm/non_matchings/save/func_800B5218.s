@@ -90,3 +90,4 @@ glabel func_800B5218
 /* 0B5F60 800B5360 27BD0048 */  addiu $sp, $sp, 0x48
 /* 0B5F64 800B5364 03E00008 */  jr    $ra
 /* 0B5F68 800B5368 00000000 */   nop
+.size func_800B5218, . - func_800B5218

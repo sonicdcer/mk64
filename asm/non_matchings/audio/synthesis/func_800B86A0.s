@@ -234,3 +234,4 @@ glabel func_800B86A0
 /* 0B9620 800B8A20 00801025 */  move  $v0, $a0
 /* 0B9624 800B8A24 03E00008 */  jr    $ra
 /* 0B9628 800B8A28 27BD0050 */   addiu $sp, $sp, 0x50
+.size func_800B86A0, . - func_800B86A0

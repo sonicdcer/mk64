@@ -2,9 +2,11 @@
 
 glabel D_800EF0B8
 .double 0.6
+.size D_800EF0B8, . - D_800EF0B8
 
 glabel D_800EF0C0
 .double 0.6
+.size D_800EF0C0, . - D_800EF0C0
 
 .section .text
 
@@ -97,3 +99,4 @@ glabel func_80080E8C
 /* 081BE0 80080FE0 8FB00014 */  lw    $s0, 0x14($sp)
 /* 081BE4 80080FE4 03E00008 */  jr    $ra
 /* 081BE8 80080FE8 27BD0040 */   addiu $sp, $sp, 0x40
+.size func_80080E8C, . - func_80080E8C

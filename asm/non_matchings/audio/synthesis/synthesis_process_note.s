@@ -656,3 +656,4 @@ glabel synthesis_process_note
 /* 0B91A8 800B85A8 8FBE0048 */  lw    $fp, 0x48($sp)
 /* 0B91AC 800B85AC 03E00008 */  jr    $ra
 /* 0B91B0 800B85B0 27BD0140 */   addiu $sp, $sp, 0x140
+.size synthesis_process_note, . - synthesis_process_note

@@ -2,6 +2,7 @@
 
 glabel D_800EF1BC
 .float 0.027
+.size D_800EF1BC, . - D_800EF1BC
 
 .section .text
 
@@ -69,3 +70,4 @@ glabel func_80082F1C
 /* 083C0C 8008300C 27BD0028 */  addiu $sp, $sp, 0x28
 /* 083C10 80083010 03E00008 */  jr    $ra
 /* 083C14 80083014 00000000 */   nop   
+.size func_80082F1C, . - func_80082F1C

@@ -2,9 +2,11 @@
 
 glabel D_800F366C
 .float 4000000.0
+.size D_800F366C, . - D_800F366C
 
 glabel D_800F3670
 .float 10000000000.0
+.size D_800F3670, . - D_800F3670
 
 .section .text
 
@@ -528,3 +530,4 @@ glabel func_800C4888
 /* 0C5BD8 800C4FD8 8FDE0048 */  lw    $fp, 0x48($fp)
 /* 0C5BDC 800C4FDC 03E00008 */  jr    $ra
 /* 0C5BE0 800C4FE0 27BD00D0 */   addiu $sp, $sp, 0xd0
+.size func_800C4888, . - func_800C4888

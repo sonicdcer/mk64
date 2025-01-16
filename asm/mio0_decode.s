@@ -57,9 +57,11 @@ glabel mio0decode
 
 /* 040D68 80040168 00000000 */  nop   
 /* 040D6C 8004016C 00000000 */  nop   
+.size mio0decode, . - mio0decode
 
 glabel D_80040170
 /* 040D70 80040170 00000000 */ .word 0x00000000
+.size D_80040170, . - D_80040170
 
 glabel func_80040174
 /* 040D74 80040174 23BDFED0 */  addi  $sp, $sp, -0x130
@@ -167,6 +169,7 @@ glabel func_80040174
 /* 040EF0 800402F0 23BD0130 */  addi  $sp, $sp, 0x130
 /* 040EF4 800402F4 03E00008 */  jr    $ra
 /* 040EF8 800402F8 00C71022 */   sub   $v0, $a2, $a3
+.size func_80040174, . - func_80040174
 
 glabel func_800402FC
 /* 040EFC 800402FC 0328C022 */  sub   $t8, $t9, $t0
@@ -300,6 +303,7 @@ glabel func_800402FC
 .L800404B8:
 /* 0410B8 800404B8 03E00008 */  jr    $ra
 /* 0410BC 800404BC 00000000 */   nop   
+.size func_800402FC, . - func_800402FC
 
 glabel mio0encode
 /* 0410C0 800404C0 3C084D49 */  lui   $t0, (0x4D494F30 >> 16) # lui $t0, 0x4d49
@@ -381,4 +385,4 @@ glabel mio0encode
 /* 0411C8 800405C8 03261022 */   sub   $v0, $t9, $a2
 
 /* 0411CC 800405CC 00000000 */  nop   
-.size mio0decode, . - mio0decode
+.size mio0encode, . - mio0encode
