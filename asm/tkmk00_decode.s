@@ -509,7 +509,7 @@ glabel func_80040C54
 /* 041884 80040C84 1000FFF5 */  b     .L80040C5C
 /* 041888 80040C88 871400FE */   lh    $s4, 0xfe($t8)
 .L80040C8C:
-/* 04188C 80040C8C 02600008 */  jr    $s3
+/* 04188C 80040C8C 02600008 */  jr    $s3 /* causes Indirect tail call in func_80040C54 that results in a crash, fix is: jr    $ra */
 /* 041890 80040C90 00000000 */   nop   
 .size func_80040C54, . - func_80040C54
 
