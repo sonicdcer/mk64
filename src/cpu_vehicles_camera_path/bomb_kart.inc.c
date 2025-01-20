@@ -215,7 +215,7 @@ void func_8000DF8C(s32 bombKartId) {
                     break;
                 } else {
                     spCA = func_8000D2B4(var_f22, var_f20, var_f24, spCA, 3);
-                    if ((spCA < 0) || (gPathCountByPathIndex[3] < spCA)) {
+                    if (((s32) spCA < 0) || (gPathCountByPathIndex[3] < spCA)) {
                         spCA = 0;
                     }
                     if (((s32) spCA) < 0x1A) {
