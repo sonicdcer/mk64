@@ -143,23 +143,23 @@ else
 endif
 
 # display selected options unless 'make clean' or 'make distclean' is run
-ifeq ($(filter clean distclean,$(MAKECMDGOALS)),)
-  $(info ==== Build Options ====)
-  $(info Version:        $(VERSION))
-  $(info Microcode:      $(GRUCODE))
-  $(info Target:         $(TARGET))
-  ifeq ($(COMPARE),1)
-    $(info Compare ROM:    yes)
-  else
-    $(info Compare ROM:    no)
-  endif
-  ifeq ($(NON_MATCHING),1)
-    $(info Build Matching: no)
-  else
-    $(info Build Matching: yes)
-  endif
-  $(info =======================)
-endif
+# ifeq ($(filter clean distclean,$(MAKECMDGOALS)),)
+#   $(info ==== Build Options ====)
+#   $(info Version:        $(VERSION))
+#   $(info Microcode:      $(GRUCODE))
+#   $(info Target:         $(TARGET))
+#   ifeq ($(COMPARE),1)
+#     $(info Compare ROM:    yes)
+#   else
+#     $(info Compare ROM:    no)
+#   endif
+#   ifeq ($(NON_MATCHING),1)
+#     $(info Build Matching: no)
+#   else
+#     $(info Build Matching: yes)
+#   endif
+#   $(info =======================)
+# endif
 
 #==============================================================================#
 # Universal Dependencies                                                       #
@@ -187,23 +187,23 @@ ifeq ($(DUMMY),FAIL)
   $(error Unable to find python)
 endif
 
-ifeq ($(filter clean distclean print-%,$(MAKECMDGOALS)),)
-   # Make tools if out of date
-  DUMMY != make -C $(TOOLS_DIR)
-  ifeq ($(DUMMY),FAIL)
-    $(error Failed to build tools)
-  endif
-  $(info Building ROM...)
-
-  # Make sure assets exist
-  NOEXTRACT ?= 0
-  ifeq ($(NOEXTRACT),0)
-    DUMMY != $(PYTHON) extract_assets.py $(VERSION) >&2 || echo FAIL
-    ifeq ($(DUMMY),FAIL)
-      $(error Failed to extract assets)
-    endif
-  endif
-endif
+# ifeq ($(filter clean distclean print-%,$(MAKECMDGOALS)),)
+#    # Make tools if out of date
+#   DUMMY != make -C $(TOOLS_DIR)
+#   ifeq ($(DUMMY),FAIL)
+#     $(error Failed to build tools)
+#   endif
+#   $(info Building ROM...)
+# 
+#   # Make sure assets exist
+#   NOEXTRACT ?= 0
+#   ifeq ($(NOEXTRACT),0)
+#     DUMMY != $(PYTHON) extract_assets.py $(VERSION) >&2 || echo FAIL
+#     ifeq ($(DUMMY),FAIL)
+#       $(error Failed to extract assets)
+#     endif
+#   endif
+# endif
 
 
 
